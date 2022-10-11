@@ -6,6 +6,10 @@ A very simple router modeled after [itty router](https://github.com/kwhitley/itt
 
 ```ts
 import { serve } from "https://deno.land/std@0.158.0/http/server.ts";
+import {
+  RouteHandler,
+  Router,
+} from "https://deno.land/x/tinyrouter@1.0.0/mod.ts";
 
 const router = new Router();
 router.get("/", () => new Response("Home Page"));
