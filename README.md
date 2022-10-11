@@ -18,5 +18,5 @@ router.get<{ name: string }>("/test/:name", (request, params) => {
 });
 router.all("*", () => new Response("Not found", { status: 404 }));
 
-serve((request) => router.handler(request), { port });
+serve((request) => router.handler(request), { port: 8080 });
 ```
